@@ -1,0 +1,47 @@
+:root {
+    --primary: #20506e;
+    --hover-primary: #387398;
+    --second: #ffcc00;
+    --white: #fff;
+    --hover-gray: #ffffff;
+    --black: #000;
+    --error: #f10;
+}
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    color: var(--primary);
+}
+
+.logo span {
+    color: var(--second);
+}
+
+.btn-logout {
+    color: var(--primary);
+    background: none;
+    border: none;
+}
+
+.btn-logout:hover {
+    text-decoration: underline;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.dropdown {
+    background: none;
+}

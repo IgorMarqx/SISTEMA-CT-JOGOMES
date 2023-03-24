@@ -1,0 +1,66 @@
+:root {
+    --primary: #20506e;
+    --hover-primary: #387398;
+    --second: #ffcc00;
+    --white: #fff;
+    --black: #000;
+    --error: #f10;
+}
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+span {
+    color: var(--error);
+}
+
+.overflow {
+    overflow-y: hidden;
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.form {
+    border: 1px solid red;
+    width: 40%;
+}
+
+.form-control:focus {
+    border: 1px solid var(--primary);
+    box-shadow: none;
+    outline: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    padding: 1rem;
+    color: var(--primary);
+}
+
+.btn-warning {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-warning:hover {
+    background-color: var(--hover-primary);
+    color: var(--white);
+}
