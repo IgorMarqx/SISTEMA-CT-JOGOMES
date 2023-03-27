@@ -27,21 +27,41 @@
     color: var(--second);
 }
 
-.btn-logout {
-    color: var(--primary);
-    background: none;
-    border: none;
+.btn {
+    color: var(--black);
+    transition: all .5s;
 }
 
-.btn-logout:hover {
-    text-decoration: underline;
+.btn:hover {
+    color: var(--hover-gray);
+    transition: all .5s;
 }
 
-.dropdown-item:hover {
+.dashboard {
+    display: flex;
+}
+
+.dashboard a {
+    color: var(--black);
+    text-decoration: none;
+    transition: all .5s;
+    padding: 1rem;
+}
+
+.dashboard a:hover {
     background-color: var(--primary);
     color: var(--white);
+    transition: all .5s;
 }
 
-.dropdown {
-    background: none;
+.logout>.dashboard>a.active {
+    color: var(--white);
+    background-color: var(--primary);
 }
+
+
+/* 
+.logout>div>a.active {
+    color: var(--white);
+    background-color: var(--primary);
+} */

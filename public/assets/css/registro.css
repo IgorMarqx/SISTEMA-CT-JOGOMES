@@ -5,43 +5,21 @@
     --white: #fff;
     --black: #000;
     --error: #f10;
+    --gray: #cdcaca;
 }
 
-* {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-span {
-    color: var(--error);
-}
-
-.overflow {
-    overflow-y: hidden;
-}
-
-.center {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    width: 80%;
-    display: flex;
-    justify-content: center;
+.public {
+    margin: 0;
+    padding: 0;
 }
 
 .form {
-    width: 40%;
+    width: 100%;
 }
 
 @media screen and (max-width:896px) {
     .form {
         width: 90%;
-    }
-    .register {
-        font-size: .9rem;
     }
 }
 
@@ -55,17 +33,6 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.home {
-    margin-left: .8rem;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-}
-
-.home:hover {
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
 }
 
 .btn-sub {
@@ -84,4 +51,27 @@ span {
 .btn-warning:hover {
     background-color: var(--hover-primary);
     color: var(--white);
+}
+
+.error {
+    color: var(--error);
+    font-size: .8rem;
+}
+
+.personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.error {
+    color: var(--error);
+}
+
+.alert {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

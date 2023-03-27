@@ -11,28 +11,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>LOGIN - ADMIN</title>
+    <title>Login</title>
 </head>
 
 <body class="overflow">
-        <?php if (isset($_SESSION['connect'])) : ?>
-            <div style="text-align: center;" class="alert alert-warning" role="alert">
-                <i class="fa-solid fa-triangle-exclamation"></i>
+    <?php if (isset($_SESSION['connect'])) : ?>
+        <div style="text-align: center;" class="alert alert-warning" role="alert">
+            <i class="fa-solid fa-triangle-exclamation"></i>
 
-                <?php
-                echo $_SESSION['connect'];
-                unset($_SESSION['connect']);
-                ?>
-            </div>
-        <?php endif; ?>
-        <a class="home" href="<?= $base ?>/"><i class="fa-solid fa-house"></i></a>
+            <?php
+            echo $_SESSION['connect'];
+            unset($_SESSION['connect']);
+            ?>
+        </div>
+    <?php endif; ?>
+    <a class="home btn btn-outline-primary mt-2" href="<?= $base ?>/">Home</a>
     </div>
 
     <div class="center">
         <div class="container">
             <div class="form">
                 <div class="logo mb-3">
-                    <img width="150px" src="<?= $base ?>/assets/imgs/" alt="">
+                    <img width="200px" src="<?= $base ?>/assets/imgs/logo." alt="">
                 </div>
                 <form action="<?= $base ?>/login" method="post">
                     <?php if (isset($_SESSION['msg'])) : ?>
@@ -53,13 +53,13 @@
                     <div class="">
                         <label for="floatingPassword">Senha <span>*</span></label>
                         <div class="input-group mb-3">
-                            <input name="senha" type="password" class="form-control" placeholder="Informe sua senha" aria-describedby="basic-addon2">
+                            <input id="floatingPassword" name="senha" type="password" class="form-control" placeholder="Informe sua senha" aria-describedby="basic-addon2">
                             <span class="input-group-text" id="basic-addon2"></span>
                         </div>
                     </div>
 
                     <div class="d-grid gap-2">
-                        <input class="btn btn-warning" type="submit" name="enviar" value="Enviar">
+                        <input class="btn-sub" type="submit" name="enviar" value="Enviar">
                     </div>
                 </form>
             </div>
