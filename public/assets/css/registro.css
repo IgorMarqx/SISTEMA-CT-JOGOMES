@@ -6,6 +6,8 @@
     --black: #000;
     --error: #f10;
     --gray: #cdcaca;
+    --green: #46c286;
+    --green-hover: #5dce97;
 }
 
 .public {
@@ -36,7 +38,7 @@
 }
 
 .btn-sub {
-    background-color: var(--primary);
+    background-color: var(--green);
     color: var(--white);
     padding: 1vh;
     border-radius: 1vh;
@@ -44,7 +46,7 @@
 }
 
 .btn-sub:hover {
-    background-color: var(--hover-primary);
+    background-color: var(--green-hover);
     color: var(--white);
 }
 

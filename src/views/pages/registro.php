@@ -36,7 +36,7 @@
             </span>
         <?php endif; ?>
     </div>
-    
+
     <div class="logo">
         <img width="170px" src="<?= $base ?>/assets/imgs/logo." alt="">
     </div>
@@ -61,8 +61,9 @@
 
                     <div class="col-md-4">
                         <label for="inputEmail4" class="form-label">Nome de usuário</label>
-                        <input value="<?php if (isset($_POST['usuario'])) echo $_POST['usuario'] ?>" name="usuario" placeholder="Informe um nome" type="text" class="form-control" id="inputEmail4">
+                        <input value="" name="usuario" placeholder="Informe um nome" type="text" class="form-control" id="inputEmail4">
                     </div>
+
 
 
                     <div class="col-md-3">
@@ -113,20 +114,32 @@
                     </div>
 
                     <div class="col-md-2 ct">
-                        <div class="title mb-3">
+                        <div class="title mb-2">
                             <label>Qual o CT?</label>
                         </div>
 
-                        <input name="praia" class="form-check-input" type="checkbox" value="praia">
-                        <label for="">Praia</label>
-
-                        <input name="ernani" class="form-check-input" type="checkbox" value="ernani">
-                        <label for="">Ernani sátiro</label>
+                        <select name="ct" class="form-select" aria-label="Default select example">
+                            <option selected>Selecione um CT</option>
+                            <option value="praia">Praia</option>
+                            <option value="ernani sátiro">Ernani Sátiro</option>
+                        </select>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-2 ct">
+                        <div class="title mb-2">
+                            <label>Gênero do aluno</label>
+                        </div>
+
+                        <select name="genero" class="form-select" aria-label="Default select example">
+                            <option selected>Informe um gênero</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2">
                         <label for="horario" class="form-label">Horário</label>
-                        <input name="horario" id="horario" type="text" class="form-control" placeholder="00:00">
+                        <input name="horario" id="horario" type="text" class="form-control" placeholder="ex:(07:30)">
                     </div>
 
                     <div class="col-md-2">
@@ -139,7 +152,7 @@
 
                     <div class="col-md-4">
                         <label for="mensalidade" class="form-label">Dia do Pagamento</label>
-                        <input name="dataPagamento" id="dataPagamento" type="text" class="form-control" placeholder="Informe o dia">
+                        <input name="dataPagamento" id="dataPagamento" type="text" class="form-control" placeholder="Informe o dia (01 a 31)">
                     </div>
 
 
